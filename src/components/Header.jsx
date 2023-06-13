@@ -2,16 +2,18 @@ import React from 'react'
 
 function Header({ handleChange }) {
   return (
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default ps-5 bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0-vO0w83uCiRbMZ2-_uyJAP01ELjFCnSXIA&usqp=CAU" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKYmBDxj9J93VG_IA5qjPCFGvDaFY5RkvfEw&usqp=CAU" alt="" width="" height="30" class="d-inline-block align-text-top" />
           <b> Image Gallery</b>
         </a>
         <ul className='nav navbar-nav navbar-right'>
-          <lable className="label">
-            <input type="file" className='input-file' onChange={handleChange}></input>
-          </lable>
+          <li><label className="label">
+            <input type="file" onChange={handleChange} 
+             />
+            <span>Upload Image</span>
+          </label></li>
         </ul>
       </div>
     </nav>

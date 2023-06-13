@@ -13,13 +13,14 @@ function App() {
     e.target.value = null;
   }
   return (
-    <div className="container-fluid">
+    <React.Fragment>
       <Header handleChange={handleChange} />
-      <Card selectImage={selectImage} />
-      <Footer />
-    </div>
-
-
+      <div className="container">
+        <Card selectImage={selectImage} />
+        <Footer/>
+      </div>
+    </React.Fragment>
+ 
   );
 }
 
