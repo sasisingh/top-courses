@@ -9,7 +9,7 @@ const Card = ({ selectImage }) => {
         selectImage && selectImage.map((item) => {
           return (
             <div className="col-sm-6 col-lg-4 text-center">
-              <img src={item} alt="picture" height="250px" width="300px" className="m-4" />
+              <img src={item} alt="gallery" height="250px" width="300px" className="m-4" />
             </div>
           )
         }
