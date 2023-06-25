@@ -10,17 +10,16 @@ function App() {
     if (!files) return
     const selectFile = URL.createObjectURL(e.target.files[0])
     setSelectImage([selectFile, ...selectImage])
-    e.target.value = null;
+    e.target.value = null; ``
   }
   return (
     <React.Fragment>
       <Header handleChange={handleChange} />
       <div className="container">
         <Card selectImage={selectImage} />
-        <Footer/>
+        <Footer />
       </div>
     </React.Fragment>
- 
   );
 }
 
