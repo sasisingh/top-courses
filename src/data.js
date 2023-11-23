@@ -13,11 +13,11 @@ export const filterData = [
     },
     {
         id: "4",
-        title: "Design"
+        title: "Design",
     },
     {
         id: "5",
-        title: "LifeStyle"
-    }
+        title: "Lifestyle",
+    },
 ]; 
 export const apiUrl = "https://codehelp-apis.vercel.app/api/get-top-courses";

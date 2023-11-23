@@ -8,6 +8,7 @@ import "./App.css"
 const App = () => {
 	const [courses, setCourses] = useState([]);
 	const [loading, setLoading] = useState(true)
+	const [category, setCategory] = useState(filterData[0].title);
 
 	const getData = () => {
 		setLoading(true)
@@ -36,11 +37,16 @@ const App = () => {
 				<Navbar />
 			</div>
 			<div className='filterData'>
-				<Filter filterData={filterData} />
+				<Filter filterData={filterData}
+					category={category}
+					setCategory={setCategory}
+				/>
 			</div>
 			<div className='Cards'>
 				{
-					loading ? (<Spinner />) : (<Cards courses={courses} />)
+					loading ? (<Spinner />) : (<Cards courses={courses}
+						category={category}
+					/>)
 				}
 			</div>
 		</div>

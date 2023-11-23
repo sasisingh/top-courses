@@ -1,48 +1,59 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.outer{
-   height: auto; 
-   width: 100%;
+
+body {
+    background-color: rgb(67, 67, 88);
+    ;
 }
-.navbar{
+
+.outer {
+    height: auto;
+    width: 100%;
+}
+
+.navbar {
     text-align: center;
     background-color: rgb(34, 29, 46);
     padding: 10px 0px;
     color: white;
 }
-.filterData{
-height: 50px;
-background-color: rgb(67, 67, 88);
-width: 100%;
-display: flex;
-justify-content: center;
+
+.filterData {
+    height: 60px;
+    background-color: rgb(67, 67, 88);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
 }
-.filterbtn{
+
+.filterbtn {
     height: 40px;
-    align-self: baseline;padding: 10px;
+    align-self: baseline;
+    padding: 10px;
     margin: 5px 10px;
     color: white;
     background-color: rgb(34, 29, 46);
     border: 2px solid white;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 12px;
 }
-.cards{
+
+.cards {
     background-color: rgb(67, 67, 88);
-    padding:10px 100px;
-    display: flex; 
-    height: auto;  
+    padding: 10px 100px;
+    display: flex;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
 }
-.card{
-    height: 380px;
+
+.card {
+    height: 350px;
     width: 350px;
     background-color: rgb(32, 32, 45);
     border: 1px solid black;
@@ -50,23 +61,26 @@ justify-content: center;
     flex-direction: column;
     margin: 10px;
     border-radius: 10px;
-} 
-.image{
+}
+
+.image {
     height: 200px;
     width: 350px;
-    border-radius: 10px 10px 0px 0px; 
-    
+    border-radius: 10px 10px 0px 0px;
+
 }
-.likebtn{
+
+.likebtn {
     height: 30px;
     border-radius: 50%;
     width: 30px;
     background-color: white;
     position: relative;
-    top:-20px;
+    top: -20px;
     left: 300px;
 }
-.description{
+
+.description {
     padding: 0px 10px;
     align-content: baseline;
     color: white;

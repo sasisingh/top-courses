@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 import "../App.css"
 
-const Cards = ({ courses }) => {
-    console.log("coufgfgfd==>", courses)
-    const getCourses = () => {
-        let allCourses = [];
-        Object.values(courses).forEach((array) => {
-            array.forEach((courseData) => {
-                allCourses.push(courseData)
+const Cards = ({ courses, category }) => {
+
+    const [likedCourses, setLikedCourses] = useState([]);
+
+    function getCourses() {
+        if (category === "All") {
+            let allCourses = [];
+            Object.values(courses).forEach(array => {
+                array.forEach(courseData => {
+                    allCourses.push(courseData)
+                })
             })
-        })
-        return allCourses;
+            return allCourses;
+        }
+        else {
+            return courses[category]
+        }
+
     }
     return (
         <div className='cards'>
             {
-                getCourses().map((couses) => {
+                getCourses().map((courses) => {
                     return (
-                        <Card courses={couses} />
+                        <Card course={courses}
+                            likedCourses={likedCourses}
+                            setLikedCourses={setLikedCourses} />
                     )
                 })
             }
