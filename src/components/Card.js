@@ -5,7 +5,7 @@ import "../App.css"
 const Card = ({courses}) => {
   return (
     <div className='card'>
-      <img src={courses.image.url} className='image'/>
+      <img src={courses.image.url} className='image' alt='course'/>
     
         <button className='likebtn'>
           <FcLike/> 
